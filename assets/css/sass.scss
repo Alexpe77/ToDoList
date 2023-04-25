@@ -1,0 +1,105 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+// Mediaqueries
+// Small devices
+@mixin responsive-small {
+    @media screen and (min-width: 375px) {
+        @content;
+    }
+ }
+ 
+ // Medium devices
+ @mixin responsive-medium {
+    @media screen and (min-width: 768px) {
+        @content;
+    }
+ }
+
+// Large devices
+@mixin responsive-large {
+    @media screen and (min-width: 992px){
+        @content;
+    }
+}
+
+body {
+    width: 375px;
+    height: 500px;
+    color: white;
+    background-color: #730071;
+    border: 2px solid red;
+        @include responsive-large {
+            width: auto;
+            height: 400px;
+            display: flex;
+            flex-direction: column;
+        }
+    header {
+        width: 300px;
+        height: 50px;
+        margin-top: 30px;
+        font-family: 'Bruno Ace SC';
+        text-align: center;
+            @include responsive-large {
+                width: auto;
+                height: auto;
+            }
+    }
+    .toDoForm {
+        height: 80px;
+        width: 350px;
+        border: 2px solid black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+            @include responsive-large {
+                width: 600px;
+                height: 120px;
+                align-self: center;
+            }
+    }
+    .taskInput{
+        width: 200px;
+        height: 40px;
+        border-radius: 25px;
+        border: none;
+            &::placeholder {
+                text-align: center;
+                font-size: 16px;
+            }
+    }
+    .selection {
+        text-align: center;
+            .todoSelection {
+                height: 30px;
+                border-radius: 25px;
+                cursor: pointer;
+            }
+    }
+    .submitBtn {
+        display: flex;
+        justify-content: center;
+        cursor: pointer;
+        margin: 0 10px 0 10px;
+        width: 40px;
+        height: 40px;
+        border: none;
+        border-radius: 25px;
+            .fa-circle-plus {
+                margin-top: 6px;
+                font-size: 30px;
+            }
+                &:hover {
+                   color: rgb(15, 156, 15); 
+                }
+    }
+    .checkBoxList {
+        width: 15px;
+        height: 15px;
+        accent-color: rgb(15, 156, 15);
+    }
+}
