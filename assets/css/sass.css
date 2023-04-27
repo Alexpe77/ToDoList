@@ -130,10 +130,10 @@ body .listContainer li span {
   padding-bottom: 5px;
 }
 body .listContainer button {
-  display: flex;
-  justify-content: center;
+  align-items: right;
   background-color: beige;
   padding: 2px;
   border-radius: 8px;
   border: none;
+  transform: translateX(30px);
 }/*# sourceMappingURL=sass.css.map */

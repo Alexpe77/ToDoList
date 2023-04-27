@@ -315,7 +315,7 @@ if (task.completed) {
   taskName.classList.add('completed');
 }
 
-deleteButton.innerHTML = '';
+deleteButton.innerHTML = '<i class="fa-solid fa-trash"></i>';
 deleteButton.addEventListener('click', () => {
   deleteTask(index);
   renderTasks();

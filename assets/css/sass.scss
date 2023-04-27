@@ -129,17 +129,15 @@ body {
                 }
         }
             button {
-                display: flex;
-                justify-content: center;
+                // display: flex;
+                // justify-content: center;
+                align-items: right;
                 background-color: beige;
                 padding: 2px;
                 border-radius: 8px;
                 border: none;
+                transform: translateX(30px);
             }
         }
 
         }
-        // @include responsive-large {
-        //     align-self: center;
-        //     width: 600px;
-        // }
