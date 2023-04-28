@@ -112,11 +112,6 @@ body .submitBtn .fa-circle-plus {
 body .submitBtn:hover {
   color: rgb(15, 156, 15);
 }
-@media screen and (min-width: 990px) {
-  body .submitBtn {
-    margin: 0;
-  }
-}
 body .listContainer {
   display: flex;
   flex-direction: column;
@@ -141,4 +136,8 @@ body .listContainer button {
   padding: 2px;
   border-radius: 8px;
   border: none;
+  cursor: pointer;
+}
+body .listContainer button:hover {
+  color: red;
 }/*# sourceMappingURL=sass.css.map */
