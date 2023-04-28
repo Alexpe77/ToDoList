@@ -253,6 +253,23 @@ toggleTask(id);
 renderTasks();
 });
 
+// Gestionnaire d'événement pour le line through
+// const lineThrough = document.querySelector('.toDoList').toggleTask(Line_Through);
+// if(task.completed) {
+//   taskItem.style.textDecoration = "linethrough";
+// }else{
+//   taskItem.style.textDecoration = "none";
+// }
+
+// function Line_Through (toDoList) {
+//   list[index].lineThrough = true;
+// }
+
+// const Line_Through = "lineThrough";
+// Element.parentNode.querySelector('span').toggleTask(Line_Through);
+// let Line_Through;
+// function getLineThrough
+
 // Gestionnaire d'événement pour le bouton de suppression
 const deleteBtn = document.querySelector('.deleteBtn');
 deleteBtn.addEventListener('click', () => {
@@ -313,6 +330,9 @@ taskCheckBox.addEventListener('change', () => {
 taskName.innerText = task.name;
 if (task.completed) {
   taskName.classList.add('completed');
+  taskName.style.textDecoration = 'line-through';
+}else{
+  taskName.style.textDecoration = 'none';
 }
 
 deleteButton.innerHTML = '<i class="fa-solid fa-trash"></i>';
@@ -332,8 +352,10 @@ function toggleTask(index) {
 const task = list[index];
 if (task.completed) {
 task.completed = false;
+taskListElement.children[index].querySelector('span').classList.remove('completed');
 } else {
 task.completed = true;
+taskListElement.children[index].querySelector('span').classList.add('completed');
 }
 }
 
