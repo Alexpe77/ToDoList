@@ -11,7 +11,7 @@
     @media screen and (min-width: 370px) {
         @content;
     }
- }
+}
  
 // Large devices
 @mixin responsive-large {
@@ -63,6 +63,15 @@ body {
                 justify-content: space-around;
             }
     }
+    .toDoList {
+        li {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding-right: 6px;
+            font-family: Verdana, Tahoma, sans-serif;
+        }
+    }
     .taskInput{
         width: 230px;
         height: 40px;
@@ -109,7 +118,6 @@ body {
             margin: 0;
         }
     }
-
     .listContainer {
         display: flex;
         flex-direction: column;
@@ -129,15 +137,10 @@ body {
                 }
         }
             button {
-                // display: flex;
-                // justify-content: center;
-                align-items: right;
                 background-color: beige;
                 padding: 2px;
                 border-radius: 8px;
                 border: none;
-                transform: translateX(30px);
             }
         }
-
         }

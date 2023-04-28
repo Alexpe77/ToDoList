@@ -54,6 +54,13 @@ body .toDoForm {
     justify-content: space-around;
   }
 }
+body .toDoList li {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-right: 6px;
+  font-family: Verdana, Tahoma, sans-serif;
+}
 body .taskInput {
   width: 230px;
   height: 40px;
@@ -130,10 +137,8 @@ body .listContainer li span {
   padding-bottom: 5px;
 }
 body .listContainer button {
-  align-items: right;
   background-color: beige;
   padding: 2px;
   border-radius: 8px;
   border: none;
-  transform: translateX(30px);
 }/*# sourceMappingURL=sass.css.map */
