@@ -7,3 +7,9 @@ The goal of this exercise was to create a to-do list using what we've learned be
 - Javascript
 - The DOM
 - Event listeners
+
+  It's a very simple to do list where you can add or delete a task and sort them
+
+## Screen shot
+
+![To do list](assets/img/screen.png)
